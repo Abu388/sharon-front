@@ -32,7 +32,7 @@ export default function DonationForm() {
   const [formData, setFormData] = useState({
     // Donor Information
     fullName: "",
-    phoneNumber: "", // Updated to match expected property name
+    phoneNumber: "",
     password: "",
     address: "",
     email: "",
@@ -188,8 +188,6 @@ export default function DonationForm() {
       }
     }
   };
-
-  const handleReceipt = (file: File) => setReceiptFile(file);
 
   const renderStep = () => {
     switch (currentStep) {
